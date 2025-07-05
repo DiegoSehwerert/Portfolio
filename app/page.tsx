@@ -4,9 +4,6 @@ import { AnimatedIntro } from "@/components/about/AnimatedSection";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
 import { TypingName } from "@/components/TypingName";
-// import ClientOnlyParticles from "@/components/ClientOnlyParticles";
-import ParticlesBackground from "@/components/ParticlesBackground";
-import { Card, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   return (
