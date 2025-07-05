@@ -35,7 +35,7 @@ export default function ComponentLibraryPage() {
                 {viewMode === "dashboard"
                   ? "Vista general de posible admin panel."
                   : viewMode === "login"
-                  ? "Interfaz de login básica limpia y funcional."
+                  ? "Previsualización de como sería un login hecho con mis componentes."
                   : "Colección de componentes reutilizables con diseño consistente."}
               </p>
             </div>
