@@ -8,8 +8,6 @@ import { TypingName } from "@/components/TypingName";
 export default function Home() {
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen py-12 px-4 text-center overflow-hidden">
-      {/* <Card className="w-full max-w-3xl bg-white shadow-lg rounded-lg p-6">
-          <CardContent className="text-center"> */}
       <AnimatedIntro>
         <Image
           src="/profile-photo.webp"
@@ -58,8 +56,6 @@ export default function Home() {
           </a>
         </div>
       </AnimatedIntro>
-      {/* </CardContent>
-        </Card> */}
     </div>
   );
 }

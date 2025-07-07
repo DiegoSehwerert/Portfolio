@@ -16,7 +16,7 @@ const planNames = {
   pro: "Plan Pro",
 };
 
-export function SubscriptionPlanCard({
+export default function SubscriptionPlanCard({
   plan,
   price,
   features,

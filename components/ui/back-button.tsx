@@ -9,7 +9,6 @@ export default function BackButton() {
   const pathname = usePathname();
   const router = useRouter();
 
-  // No mostrar en la home ("/")
   if (pathname === "/") return null;
 
   return (
