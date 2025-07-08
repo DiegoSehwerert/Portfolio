@@ -1,6 +1,6 @@
 import { Button } from "./button";
 import { Card, CardContent } from "./card";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/client/utils";
 
 interface SubscriptionPlanCardProps {
   plan: "free" | "starter" | "pro";

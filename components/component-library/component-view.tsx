@@ -3,7 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import CodeModal from "@/components/ui/code-modal";
-import { demoMap } from "@/app/component-library/componentList.client";
+import { demoMap } from "@/app/[locale]/component-library/componentList.client";
 
 interface ComponentItem {
   name: string;

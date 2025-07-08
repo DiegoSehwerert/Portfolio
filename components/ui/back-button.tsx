@@ -9,7 +9,9 @@ export default function BackButton() {
   const pathname = usePathname();
   const router = useRouter();
 
-  if (pathname === "/") return null;
+  const isLocaleRoot = /^\/(es|en)$/.test(pathname);
+
+  if (isLocaleRoot) return null;
 
   return (
     <Button

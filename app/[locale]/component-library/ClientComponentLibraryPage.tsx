@@ -1,5 +1,7 @@
 "use client";
+
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import DashboardView from "@/components/component-library/dashboard-view";
 import LoginView from "@/components/component-library/login-view";
@@ -19,25 +21,39 @@ export default function ClientComponentLibraryPage({ components }: Props) {
     "components" | "dashboard" | "login"
   >("components");
 
+  const t = useTranslations("componentLibrary");
+
+  const getTitle = () => {
+    switch (viewMode) {
+      case "dashboard":
+        return t("dashboardTitle");
+      case "login":
+        return t("loginTitle");
+      default:
+        return t("componentsTitle");
+    }
+  };
+
+  const getDescription = () => {
+    switch (viewMode) {
+      case "dashboard":
+        return t("dashboardDescription");
+      case "login":
+        return t("loginDescription");
+      default:
+        return t("componentsDescription");
+    }
+  };
+
   return (
     <div className="flex min-h-screen text-foreground justify-center">
       <div className="flex w-full max-w-[1440px] flex-col h-screen">
         <div className="shrink-0 px-6 py-8 border-b">
           <div className="max-w-6xl mx-auto flex flex-col gap-2 md:flex-row md:items-center md:justify-between md:gap-4">
             <div className="w-full md:w-auto">
-              <h1 className="text-2xl sm:text-3xl font-bold">
-                {viewMode === "dashboard"
-                  ? "Panel de control"
-                  : viewMode === "login"
-                  ? "Login"
-                  : "Librería de Componentes"}
-              </h1>
+              <h1 className="text-2xl sm:text-3xl font-bold">{getTitle()}</h1>
               <p className="text-muted-foreground text-sm sm:text-base mt-1">
-                {viewMode === "dashboard"
-                  ? "Vista general de posible admin panel."
-                  : viewMode === "login"
-                  ? "Previsualización de como sería un login hecho con mis componentes."
-                  : "Colección de componentes reutilizables con diseño consistente."}
+                {getDescription()}
               </p>
             </div>
 
@@ -52,19 +68,19 @@ export default function ClientComponentLibraryPage({ components }: Props) {
                 value="components"
                 className="min-w-[120px] justify-center text-sm"
               >
-                Componentes
+                {t("toggleComponents")}
               </ToggleGroupItem>
               <ToggleGroupItem
                 value="dashboard"
                 className="min-w-[120px] justify-center text-sm"
               >
-                Dashboard
+                {t("toggleDashboard")}
               </ToggleGroupItem>
               <ToggleGroupItem
                 value="login"
                 className="min-w-[120px] justify-center text-sm"
               >
-                Login
+                {t("toggleLogin")}
               </ToggleGroupItem>
             </ToggleGroup>
           </div>
@@ -83,7 +99,7 @@ export default function ClientComponentLibraryPage({ components }: Props) {
             }
           `}</style>
 
-          <div className="">
+          <div className="w-full flex items-center justify-center">
             {viewMode === "components" ? (
               <ComponentView components={components} />
             ) : viewMode === "dashboard" ? (

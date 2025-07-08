@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function DashboardView() {
   return (
     <Card>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col w-full md:flex-row">
         <aside className="w-full md:w-56 shrink-0 border-r flex-col px-4 py-6">
           <h2 className="text-lg font-bold mb-6">Menú</h2>
           <nav className="space-y-3 text-sm font-medium text-muted-foreground">

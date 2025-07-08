@@ -1,0 +1,133 @@
+{
+  "home": {
+    "name": "Diego Sehwerert",
+    "description": "Construyo productos web modernos con Next.js, Node.js y TypeScript.",
+    "projectButton": "Ver Proyectos",
+    "aboutButton": "Sobre Mí"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Soy desarrollador fullstack con 3 años de experiencia profesional, especializado en la creación de aplicaciones web modernas usando <strong>Next.js, Node.js, TypeScript y TailwindCSS.</strong> Me enfoco en escribir código limpio, escalable y orientado a producto.",
+    "cvButton": "Ver CV",
+    "contactButton": "Contactar por correo"
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "companies": {
+      "anysolution": {
+        "position": "Fullstack Developer",
+        "period": "2024 - presente",
+        "responsibilities": [
+          "Diseño e implementación de una arquitectura de microservicios usando NestJS, MongoDB y Prisma",
+          "Automatización completa del ciclo de despliegue con CI/CD en GitHub Actions y Docker Compose",
+          "Refactorización de legacy code con enfoque en escalabilidad y desacoplamiento de servicios",
+          "Desarrollo de interfaces administrativas en Next.js 14 App Router con TailwindCSS y Server Actions",
+          "Mentoría técnica a becarios en prácticas (revisión de código, definición de tareas y pairing)"
+        ]
+      },
+      "gladtolink": {
+        "position": "Frontend Developer",
+        "period": "2023 - 2024",
+        "responsibilities": [
+          "Rediseño completo de la UI manteniendo la compatibilidad con el backend heredado",
+          "Implementación de un sistema de diseño con TailwindCSS y Radix UI",
+          "Documentación y desarrollo de componentes reutilizables con Storybook",
+          "Optimización del rendimiento de carga y SSR con Next.js",
+          "Integración progresiva de TypeScript en una base de código JavaScript"
+        ]
+      }
+    }
+  },
+  "stack": {
+    "title": "Stack Principal",
+    "frontend": "React, Next.js (App Router), TailwindCSS, Radix UI / ShadCN",
+    "backend": "Node.js, Express, REST APIs, Prisma, GraphQL",
+    "devops": "Docker, GitHub Actions, Vercel",
+    "databases": "PostgreSQL, MongoDB, Redis",
+    "other": "Git, CI/CD, TypeScript, Zod"
+  },
+  "languages": {
+    "title": "Idiomas",
+    "spanish": "Español: nativo",
+    "english": "Inglés: B2.2 (todos los recursos y fuentes que estudio son en inglés)"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "viewComponents": "Ver librería de componentes",
+    "list": [
+      {
+        "title": "CSV Editor SSR",
+        "description": "Editor de archivos CSV con comparación de datos, validaciones y renderizado en servidor con Next.js 14.",
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "React Hook Form",
+          "CSV",
+          "TailwindCSS"
+        ],
+        "repo": "https://github.com/tuusuario/csv-editor",
+        "demo": "https://csv-editor.vercel.app"
+      },
+      {
+        "title": "Clon de sistema de reservas",
+        "description": "Ingeniería inversa del endpoint de reservas para generar entradas falsas y validar payloads.",
+        "tech": ["Node.js", "Express", "MongoDB", "Postman", "Zod"],
+        "repo": "https://github.com/tuusuario/reservas-fake",
+        "demo": "https://reservas-fake.vercel.app"
+      }
+    ]
+  },
+  "componentLibrary": {
+    "componentsTitle": "Librería de Componentes",
+    "componentsDescription": "Colección de componentes reutilizables con diseño consistente.",
+    "dashboardTitle": "Panel de control",
+    "dashboardDescription": "Vista general de posible admin panel.",
+    "loginTitle": "Login",
+    "loginDescription": "Previsualización de como sería un login hecho con mis componentes.",
+    "toggleComponents": "Componentes",
+    "toggleDashboard": "Dashboard",
+    "toggleLogin": "Login"
+  },
+  "components": {
+    "button": {
+      "name": "Button",
+      "description": "Botones accesibles con variantes, tamaños y estados"
+    },
+    "card": {
+      "name": "Card",
+      "description": "Tarjetas simples y reutilizables"
+    },
+    "badge": {
+      "name": "Badge",
+      "description": "Etiquetas para resaltar información"
+    },
+    "dashboardcard": {
+      "name": "DashboardCard",
+      "description": "Tarjetas estadísticas con valor, descripción y acción"
+    },
+    "user-card": {
+      "name": "User Card",
+      "description": "Muestra información de usuario con acciones disponibles"
+    },
+    "subscriptioncard": {
+      "name": "Subscription Card",
+      "description": "Planes de suscripción con acciones de upgrade"
+    },
+    "activity-card": {
+      "name": "Activity Card",
+      "description": "Resumen semanal con gráfica embebida"
+    },
+    "activitygoal": {
+      "name": "Activity Goal",
+      "description": "Visualización de progreso semanal hacia un objetivo diario"
+    },
+    "timeline": {
+      "name": "Timeline",
+      "description": "Muestra eventos cronológicos con estilo vertical"
+    },
+    "callout": {
+      "name": "Callout",
+      "description": "Mensajes destacados con contexto visual"
+    }
+  }
+}

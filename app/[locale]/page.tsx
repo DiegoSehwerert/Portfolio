@@ -1,33 +1,41 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { AnimatedIntro } from "@/components/about/AnimatedSection";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
 import { TypingName } from "@/components/TypingName";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("home");
+
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen py-12 px-4 text-center overflow-hidden">
       <AnimatedIntro>
         <Image
           src="/profile-photo.webp"
           alt="Foto de perfil"
+          priority={true}
           width={120}
           height={120}
           className="rounded-full mb-4"
         />
         <h1 className="text-4xl md:text-6xl font-bold mb-2 text-foreground">
-          Hola, soy <TypingName fullText="Diego Sehwerert" />
+          Hola, soy <TypingName fullText={t("name")} />
         </h1>
+
         <p className="text-lg md:text-xl max-w-xl text-muted-foreground mb-6">
-          Construyo productos web modernos con Next.js, Node.js y TypeScript.
+          {t("description")}
         </p>
+
         <div className="flex gap-4 mb-4">
           <Button asChild>
-            <Link href="/projects">Ver proyectos</Link>
+            <Link href="/projects">{t("projectButton")}</Link>
           </Button>
           <Button variant="outline" asChild>
-            <Link href="/about">Sobre mí</Link>
+            <Link href="/about">{t("aboutButton")}</Link>
           </Button>
         </div>
 

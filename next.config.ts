@@ -1,4 +1,6 @@
-import type { NextConfig } from "next";
+import { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
+const withNextIntl = createNextIntlPlugin("./app/i18n/request.ts");
 
 const nextConfig: NextConfig = {
   images: {
@@ -11,15 +13,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  webpack(config: any) {
-    config.module.rules.push({
-      test: /\.(tsx?|js|css|html)$/,
-      resourceQuery: /raw/, // solo cuando haces `?raw`
-      use: "raw-loader",
-    });
-
+  webpack(config) {
     return config;
   },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);
