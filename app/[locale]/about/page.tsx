@@ -28,9 +28,13 @@ export default function AboutPage() {
         />
         <h1 className="text-4xl font-bold mb-2">{t("title")}</h1>
         <p className="text-muted-foreground mb-4 max-w-prose">
-          {t.rich("description", {
-            strong: (chunks) => <strong>{chunks}</strong>,
-          })}
+          {t.raw("description").map((item: string, idx: number) => (
+            <span
+              key={idx}
+              className="block mb-2"
+              dangerouslySetInnerHTML={{ __html: item }}
+            />
+          ))}
         </p>
         <div className="flex gap-4">
           <a href="/Curriculum.pdf" target="_blank" rel="noopener noreferrer">

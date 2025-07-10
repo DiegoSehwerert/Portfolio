@@ -1,6 +1,8 @@
 // middleware.ts
+import { fstat } from "fs";
 import createMiddleware from "next-intl/middleware";
 import { NextRequest, NextResponse } from "next/server";
+import fs from "fs";
 
 const middleware = createMiddleware({
   locales: ["en", "es"],
@@ -29,15 +31,12 @@ export default function enhancedMiddleware(req: NextRequest) {
     query: Object.fromEntries(req.nextUrl.searchParams.entries()),
     locale: req.nextUrl.locale,
     headers: Object.fromEntries(req.headers.entries()),
-    // Extra: intenta obtener datos de geolocalización si tu plataforma lo soporta
     geo: (req as any).geo || undefined,
-    // Extra: información sobre el dispositivo (muy limitada en backend)
     device: {
       isMobile: /mobile/i.test(req.headers.get("user-agent") || ""),
       isTablet: /tablet/i.test(req.headers.get("user-agent") || ""),
       isDesktop: !/mobile|tablet/i.test(req.headers.get("user-agent") || ""),
     },
-    // Extra: información sobre el navegador
     browser: (() => {
       const ua = req.headers.get("user-agent") || "";
       if (/chrome|crios|crmo/i.test(ua)) return "Chrome";
@@ -59,16 +58,9 @@ export default function enhancedMiddleware(req: NextRequest) {
     })(),
   };
 
-  // Aquí puedes enviar visitorData a tu sistema de analytics
-  // fetch("https://your-analytics-endpoint", {
-  //   method: "POST",
-  //   body: JSON.stringify(visitorData),
-  //   headers: { "Content-Type": "application/json" },
-  // });
-
   return response;
 }
 
 export const config = {
-  matcher: ["/((?!_next|favicon.ico|.*\\..*).*)"], // ignora assets
+  matcher: ["/((?!_next|favicon.ico|.*\\..*).*)"],
 };

@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "name": "Diego Sehwerert",
+    "email": "dsehwerert@gmail.com",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Admin",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 2,
+    "name": "Adam Taylor",
+    "email": "ataylor@gmail.com",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "User",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 3,
+    "name": "María García",
+    "email": "maria.garcia@empresa.com",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "User",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 4,
+    "name": "Carlos López",
+    "email": "carlos.lopez@startup.io",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Editor",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 5,
+    "name": "Ana Rodríguez",
+    "email": "ana.rodriguez@tech.com",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Developer",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 6,
+    "name": "Luis Martínez",
+    "email": "luis.martinez@design.io",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Designer",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 7,
+    "name": "Sofia Chen",
+    "email": "sofia.chen@global.com",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Manager",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 8,
+    "name": "Roberto Silva",
+    "email": "roberto.silva@corp.net",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Analyst",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 9,
+    "name": "Elena Popov",
+    "email": "elena.popov@eastern.eu",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "QA Tester",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 10,
+    "name": "David Kim",
+    "email": "david.kim@korea.co",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "DevOps",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 11,
+    "name": "Isabella Jones",
+    "email": "isabella.jones@marketing.uk",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Marketing",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 12,
+    "name": "Ahmed Hassan",
+    "email": "ahmed.hassan@middle.east",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Product Owner",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 13,
+    "name": "Julia Petrov",
+    "email": "julia.petrov@russia.ru",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Backend Developer",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 14,
+    "name": "Thomas Mueller",
+    "email": "thomas.mueller@germany.de",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Frontend Developer",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 15,
+    "name": "Priya Sharma",
+    "email": "priya.sharma@india.in",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Data Scientist",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 16,
+    "name": "Jean Dubois",
+    "email": "jean.dubois@france.fr",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "UX Designer",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 17,
+    "name": "Marco Rossi",
+    "email": "marco.rossi@italy.it",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "System Admin",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 18,
+    "name": "Yuki Tanaka",
+    "email": "yuki.tanaka@japan.jp",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Mobile Developer",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 19,
+    "name": "Emma Wilson",
+    "email": "emma.wilson@australia.au",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Project Manager",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 20,
+    "name": "Lucas Santos",
+    "email": "lucas.santos@brazil.br",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Full Stack Developer",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 21,
+    "name": "Fatima Al-Zahra",
+    "email": "fatima.alzahra@emirates.ae",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Business Analyst",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 22,
+    "name": "Nils Andersson",
+    "email": "nils.andersson@sweden.se",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Security Engineer",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 23,
+    "name": "Zara Williams",
+    "email": "zara.williams@southafrica.za",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Content Creator",
+    "actionLabel": "Editar"
+  },
+  {
+    "id": 24,
+    "name": "Viktor Petrov",
+    "email": "viktor.petrov@ukraine.ua",
+    "avatarUrl": "/user-placeholder.webp",
+    "role": "Database Admin",
+    "actionLabel": "Editar"
+  }
+]

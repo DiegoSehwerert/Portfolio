@@ -23,7 +23,7 @@ export default function Home() {
           className="rounded-full mb-4"
         />
         <h1 className="text-4xl md:text-6xl font-bold mb-2 text-foreground">
-          Hola, soy <TypingName fullText={t("name")} />
+          Hola, {t("Iam")} <TypingName fullText={t("name")} />
         </h1>
 
         <p className="text-lg md:text-xl max-w-xl text-muted-foreground mb-6">

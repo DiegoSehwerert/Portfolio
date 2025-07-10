@@ -1,5 +1,6 @@
 {
   "home": {
+    "Iam": "soy",
     "name": "Diego Sehwerert",
     "description": "Construyo productos web modernos con Next.js, Node.js y TypeScript.",
     "projectButton": "Ver Proyectos",
@@ -7,7 +8,10 @@
   },
   "about": {
     "title": "Sobre Mí",
-    "description": "Soy desarrollador fullstack con 3 años de experiencia profesional, especializado en la creación de aplicaciones web modernas usando <strong>Next.js, Node.js, TypeScript y TailwindCSS.</strong> Me enfoco en escribir código limpio, escalable y orientado a producto.",
+    "description": [
+      "Soy desarrollador fullstack con 3 años de experiencia profesional construyendo productos modernos con <strong>Next.js, Node.js, TypeScript y TailwindCSS</strong>. Me enfoco en escribir código claro, mantenible y orientado a producto, con especial atención a la arquitectura y a la escalabilidad.",
+      "He trabajado en frontend y backend, he automatizado despliegues, liderado refactors técnicos y ayudado a otros a crecer. Me implico en cada proyecto como si fuera mío, buscando siempre aportar valor real con soluciones bien pensadas. No solo quiero que las cosas funcionen: quiero que estén bien hechas."
+    ],
     "cvButton": "Ver CV",
     "contactButton": "Contactar por correo"
   },
@@ -21,7 +25,7 @@
           "Diseño e implementación de una arquitectura de microservicios usando NestJS, MongoDB y Prisma",
           "Automatización completa del ciclo de despliegue con CI/CD en GitHub Actions y Docker Compose",
           "Refactorización de legacy code con enfoque en escalabilidad y desacoplamiento de servicios",
-          "Desarrollo de interfaces administrativas en Next.js 14 App Router con TailwindCSS y Server Actions",
+          "Desarrollo de interfaces administrativas en Next.js (App Router) con TailwindCSS y Server Actions",
           "Mentoría técnica a becarios en prácticas (revisión de código, definición de tareas y pairing)"
         ]
       },
@@ -57,7 +61,7 @@
     "list": [
       {
         "title": "CSV Editor SSR",
-        "description": "Editor de archivos CSV con comparación de datos, validaciones y renderizado en servidor con Next.js 14.",
+        "description": "Editor de archivos CSV con comparación de datos, validaciones y renderizado en servidor con Next.js.",
         "tech": [
           "Next.js",
           "TypeScript",
@@ -87,6 +91,32 @@
     "toggleComponents": "Componentes",
     "toggleDashboard": "Dashboard",
     "toggleLogin": "Login"
+  },
+  "dashboard": {
+    "menu": "Menú",
+    "home": "Inicio",
+    "stats": "Stats",
+    "users": "Users",
+    "config": "Config",
+    "totalRevenue": "Ingresos totales",
+    "activeUsers": "Usuarios activos",
+    "feedback": "Feedback",
+    "usersSection": "Usuarios",
+    "weeklyProgress": "Progreso semanal",
+    "timeline": "Timeline",
+    "transactions": "Transacciones",
+    "showMoreUsers": "usuarios más... (click para ver todos)",
+    "showLessUsers": "Mostrar menos usuarios",
+    "editButton": "Editar",
+    "date": "Fecha",
+    "user": "Usuario",
+    "status": "Estado",
+    "amount": "€",
+    "completed": "Completado",
+    "pending": "Pendiente",
+    "failed": "Fallido",
+    "revenue": "Ingresos",
+    "high": "Alta"
   },
   "components": {
     "button": {

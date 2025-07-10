@@ -1,8 +1,163 @@
 {
   "home": {
-    "name": "UAUAUAUA",
-    "description": "Construyo productos web modernos con Next.js, Node.js y TypeScript.",
-    "projectButton": "Ver Proyectos",
-    "aboutButton": "Sobre Mí"
+    "Iam": "I'm",
+    "name": "Diego Sehwerert",
+    "description": "I build modern web products with Next.js, Node.js and TypeScript.",
+    "projectButton": "View Projects",
+    "aboutButton": "About Me"
+  },
+  "about": {
+    "title": "About Me",
+    "description": [
+      "I'm a fullstack developer with 3 years of professional experience building modern products using <strong>Next.js, Node.js, TypeScript, and TailwindCSS</strong>. I focus on writing clean, maintainable, and product-oriented code, with special attention to architecture and scalability.",
+      "I've worked on both frontend and backend, automated deployments, led technical refactors, and helped others grow. I approach every project as if it were my own, always aiming to deliver real value through well-thought-out solutions. I don't just want things to work — I want them to be done right."
+    ],
+    "cvButton": "View CV",
+    "contactButton": "Contact via email"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "companies": {
+      "anysolution": {
+        "position": "Fullstack Developer",
+        "period": "2024 - present",
+        "responsibilities": [
+          "Design and implementation of microservices architecture using NestJS, MongoDB and Prisma",
+          "Complete automation of deployment cycle with CI/CD in GitHub Actions and Docker Compose",
+          "Legacy code refactoring with focus on scalability and service decoupling",
+          "Development of administrative interfaces in Next.js (App Router) with TailwindCSS and Server Actions",
+          "Technical mentoring to interns (code review, task definition and pairing)"
+        ]
+      },
+      "gladtolink": {
+        "position": "Frontend Developer",
+        "period": "2023 - 2024",
+        "responsibilities": [
+          "Complete UI redesign maintaining compatibility with legacy backend",
+          "Implementation of design system with TailwindCSS and Radix UI",
+          "Documentation and development of reusable components with Storybook",
+          "Performance optimization and SSR with Next.js",
+          "Progressive TypeScript integration in JavaScript codebase"
+        ]
+      }
+    }
+  },
+  "stack": {
+    "title": "Main Stack",
+    "frontend": "React, Next.js (App Router), TailwindCSS, Radix UI / ShadCN",
+    "backend": "Node.js, Express, REST APIs, Prisma, GraphQL",
+    "devops": "Docker, GitHub Actions, Vercel",
+    "databases": "PostgreSQL, MongoDB, Redis",
+    "other": "Git, CI/CD, TypeScript, Zod"
+  },
+  "languages": {
+    "title": "Languages",
+    "spanish": "Spanish: native",
+    "english": "English: B2.2 (all resources and sources I study are in English)"
+  },
+  "projects": {
+    "title": "Projects",
+    "viewComponents": "View component library",
+    "list": [
+      {
+        "title": "CSV Editor SSR",
+        "description": "CSV file editor with data comparison, validations and server rendering with Next.js.",
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "React Hook Form",
+          "CSV",
+          "TailwindCSS"
+        ],
+        "repo": "https://github.com/tuusuario/csv-editor",
+        "demo": "https://csv-editor.vercel.app"
+      },
+      {
+        "title": "Booking system clone",
+        "description": "Reverse engineering of booking endpoint to generate fake entries and validate payloads.",
+        "tech": ["Node.js", "Express", "MongoDB", "Postman", "Zod"],
+        "repo": "https://github.com/tuusuario/reservas-fake",
+        "demo": "https://reservas-fake.vercel.app"
+      }
+    ]
+  },
+  "componentLibrary": {
+    "componentsTitle": "Component Library",
+    "componentsDescription": "Collection of reusable components with consistent design.",
+    "dashboardTitle": "Dashboard",
+    "dashboardDescription": "Overview of possible admin panel.",
+    "loginTitle": "Login",
+    "loginDescription": "Preview of what a login made with my components would look like.",
+    "toggleComponents": "Components",
+    "toggleDashboard": "Dashboard",
+    "toggleLogin": "Login"
+  },
+  "dashboard": {
+    "menu": "Menu",
+    "home": "Home",
+    "stats": "Stats",
+    "users": "Users",
+    "config": "Config",
+    "totalRevenue": "Total Revenue",
+    "activeUsers": "Active Users",
+    "feedback": "Feedback",
+    "usersSection": "Users",
+    "weeklyProgress": "Weekly Progress",
+    "timeline": "Timeline",
+    "transactions": "Transactions",
+    "showMoreUsers": "more users... (click to see all)",
+    "showLessUsers": "Show less users",
+    "editButton": "Edit",
+    "date": "Date",
+    "user": "User",
+    "status": "Status",
+    "amount": "$",
+    "completed": "Completed",
+    "pending": "Pending",
+    "failed": "Failed",
+    "revenue": "Revenue",
+    "high": "High"
+  },
+  "components": {
+    "button": {
+      "name": "Button",
+      "description": "Accessible buttons with variants, sizes and states"
+    },
+    "card": {
+      "name": "Card",
+      "description": "Simple and reusable cards"
+    },
+    "badge": {
+      "name": "Badge",
+      "description": "Labels to highlight information"
+    },
+    "dashboardcard": {
+      "name": "DashboardCard",
+      "description": "Statistical cards with value, description and action"
+    },
+    "user-card": {
+      "name": "User Card",
+      "description": "Shows user information with available actions"
+    },
+    "subscriptioncard": {
+      "name": "Subscription Card",
+      "description": "Subscription plans with upgrade actions"
+    },
+    "activity-card": {
+      "name": "Activity Card",
+      "description": "Weekly summary with embedded chart"
+    },
+    "activitygoal": {
+      "name": "Activity Goal",
+      "description": "Weekly progress visualization towards daily goal"
+    },
+    "timeline": {
+      "name": "Timeline",
+      "description": "Shows chronological events with vertical style"
+    },
+    "callout": {
+      "name": "Callout",
+      "description": "Highlighted messages with visual context"
+    }
   }
 }

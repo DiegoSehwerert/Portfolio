@@ -46,48 +46,54 @@ export default function ClientComponentLibraryPage({ components }: Props) {
   };
 
   return (
-    <div className="flex min-h-screen text-foreground justify-center">
-      <div className="flex w-full max-w-[1440px] flex-col h-screen">
-        <div className="shrink-0 px-6 py-8 border-b">
-          <div className="max-w-6xl mx-auto flex flex-col gap-2 md:flex-row md:items-center md:justify-between md:gap-4">
+    <div className="min-h-screen text-foreground">
+      <div className="w-full h-screen flex flex-col">
+        <div className="shrink-0 px-4 sm:px-6 py-6 sm:py-8 border-b">
+          <div className="max-w-7xl mx-auto flex flex-col gap-4 sm:gap-2 md:flex-row md:items-center md:justify-between">
             <div className="w-full md:w-auto">
-              <h1 className="text-2xl sm:text-3xl font-bold">{getTitle()}</h1>
-              <p className="text-muted-foreground text-sm sm:text-base mt-1">
+              <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold">
+                {getTitle()}
+              </h1>
+              <p className="text-muted-foreground text-xs sm:text-sm lg:text-base mt-1">
                 {getDescription()}
               </p>
             </div>
 
-            <ToggleGroup
-              type="single"
-              value={viewMode}
-              onValueChange={(val) =>
-                val && setViewMode(val as "components" | "dashboard" | "login")
-              }
-            >
-              <ToggleGroupItem
-                value="components"
-                className="min-w-[120px] justify-center text-sm"
+            <div className="flex justify-center md:justify-end">
+              <ToggleGroup
+                type="single"
+                value={viewMode}
+                onValueChange={(val) =>
+                  val &&
+                  setViewMode(val as "components" | "dashboard" | "login")
+                }
+                className="w-full md:w-auto"
               >
-                {t("toggleComponents")}
-              </ToggleGroupItem>
-              <ToggleGroupItem
-                value="dashboard"
-                className="min-w-[120px] justify-center text-sm"
-              >
-                {t("toggleDashboard")}
-              </ToggleGroupItem>
-              <ToggleGroupItem
-                value="login"
-                className="min-w-[120px] justify-center text-sm"
-              >
-                {t("toggleLogin")}
-              </ToggleGroupItem>
-            </ToggleGroup>
+                <ToggleGroupItem
+                  value="components"
+                  className="flex-1 md:flex-none md:min-w-[100px] lg:min-w-[120px] justify-center text-xs sm:text-sm"
+                >
+                  {t("toggleComponents")}
+                </ToggleGroupItem>
+                <ToggleGroupItem
+                  value="dashboard"
+                  className="flex-1 md:flex-none md:min-w-[100px] lg:min-w-[120px] justify-center text-xs sm:text-sm"
+                >
+                  {t("toggleDashboard")}
+                </ToggleGroupItem>
+                <ToggleGroupItem
+                  value="login"
+                  className="flex-1 md:flex-none md:min-w-[100px] lg:min-w-[120px] justify-center text-xs sm:text-sm"
+                >
+                  {t("toggleLogin")}
+                </ToggleGroupItem>
+              </ToggleGroup>
+            </div>
           </div>
         </div>
 
         <div
-          className="flex-1 overflow-y-auto px-6 py-8"
+          className="flex-1 overflow-y-auto overflow-x-hidden px-2 sm:px-4 lg:px-6 py-4 sm:py-6 lg:py-8"
           style={{
             scrollbarWidth: "none",
             msOverflowStyle: "none",
@@ -99,7 +105,7 @@ export default function ClientComponentLibraryPage({ components }: Props) {
             }
           `}</style>
 
-          <div className="w-full flex items-center justify-center">
+          <div className="w-full max-w-7xl mx-auto">
             {viewMode === "components" ? (
               <ComponentView components={components} />
             ) : viewMode === "dashboard" ? (
