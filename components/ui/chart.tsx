@@ -128,6 +128,7 @@ function ChartTooltipContent(
     nameKey,
     labelKey,
     payload,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } = props as any; // Type assertion because Recharts passes payload at runtime
 
   const { config } = useChart();
@@ -272,7 +273,9 @@ function ChartLegendContent({
   payload,
   verticalAlign = "bottom",
   nameKey,
-}: React.ComponentProps<"div"> & {
+}: // eslint-disable-next-line @typescript-eslint/no-explicit-any
+React.ComponentProps<"div"> & {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   payload?: any[];
   verticalAlign?: "top" | "bottom" | "middle";
   hideIcon?: boolean;

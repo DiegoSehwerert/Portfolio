@@ -2,15 +2,16 @@
   "home": {
     "Iam": "I'm",
     "name": "Diego Sehwerert",
-    "description": "I build modern web products with Next.js, Node.js and TypeScript.",
+    "description": "I design and build scalable, modern web products using Next.js, Node.js and TypeScript with a strong focus on architecture and user experience.",
     "projectButton": "View Projects",
     "aboutButton": "About Me"
   },
   "about": {
-    "title": "About Me",
+    "title": "Currently",
     "description": [
-      "I'm a fullstack developer with 3 years of professional experience building modern products using <strong>Next.js, Node.js, TypeScript, and TailwindCSS</strong>. I focus on writing clean, maintainable, and product-oriented code, with special attention to architecture and scalability.",
-      "I've worked on both frontend and backend, automated deployments, led technical refactors, and helped others grow. I approach every project as if it were my own, always aiming to deliver real value through well-thought-out solutions. I don't just want things to work — I want them to be done right."
+      "Building a modular SaaS platform with a visual focus and reusable components.",
+      "Studying event-driven architectures and distributed workers.",
+      "Looking to join a team that values technical quality and functional design."
     ],
     "cvButton": "View CV",
     "contactButton": "Contact via email"
@@ -43,7 +44,7 @@
     }
   },
   "stack": {
-    "title": "Main Stack",
+    "title": "Tech & Tools",
     "frontend": "React, Next.js (App Router), TailwindCSS, Radix UI / ShadCN",
     "backend": "Node.js, Express, REST APIs, Prisma, GraphQL",
     "devops": "Docker, GitHub Actions, Vercel",
@@ -53,7 +54,7 @@
   "languages": {
     "title": "Languages",
     "spanish": "Spanish: native",
-    "english": "English: B2.2 (all resources and sources I study are in English)"
+    "english": "English: B2.2. All my technical learning is done in English — including documentation, resources and communities."
   },
   "projects": {
     "title": "Projects",

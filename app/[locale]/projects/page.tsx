@@ -23,7 +23,7 @@ export default function ProjectsPage() {
           {t("title")}
         </h1>
         <Button variant="outline" asChild>
-          <Link href="/component-library">{t("viewComponents")}</Link>
+          <Link href="/projects/component-library">{t("viewComponents")}</Link>
         </Button>
       </div>
 

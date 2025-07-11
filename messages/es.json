@@ -2,15 +2,16 @@
   "home": {
     "Iam": "soy",
     "name": "Diego Sehwerert",
-    "description": "Construyo productos web modernos con Next.js, Node.js y TypeScript.",
+    "description": "Diseño y construyo productos web escalables y modernos con Next.js, Node.js y TypeScript, cuidando tanto la arquitectura como la experiencia de usuario.",
     "projectButton": "Ver Proyectos",
     "aboutButton": "Sobre Mí"
   },
   "about": {
-    "title": "Sobre Mí",
+    "title": "Actualmente",
     "description": [
-      "Soy desarrollador fullstack con 3 años de experiencia profesional construyendo productos modernos con <strong>Next.js, Node.js, TypeScript y TailwindCSS</strong>. Me enfoco en escribir código claro, mantenible y orientado a producto, con especial atención a la arquitectura y a la escalabilidad.",
-      "He trabajado en frontend y backend, he automatizado despliegues, liderado refactors técnicos y ayudado a otros a crecer. Me implico en cada proyecto como si fuera mío, buscando siempre aportar valor real con soluciones bien pensadas. No solo quiero que las cosas funcionen: quiero que estén bien hechas."
+      "Desarrollando una plataforma SaaS modular con enfoque visual y componentes reutilizables.",
+      "Estudiando arquitecturas basadas en colas de eventos y workers distribuidos.",
+      "Buscando incorporarme a un equipo que valore la calidad técnica y el diseño funcional."
     ],
     "cvButton": "Ver CV",
     "contactButton": "Contactar por correo"
@@ -43,7 +44,7 @@
     }
   },
   "stack": {
-    "title": "Stack Principal",
+    "title": "Tecnología y Herramientas",
     "frontend": "React, Next.js (App Router), TailwindCSS, Radix UI / ShadCN",
     "backend": "Node.js, Express, REST APIs, Prisma, GraphQL",
     "devops": "Docker, GitHub Actions, Vercel",
@@ -53,7 +54,7 @@
   "languages": {
     "title": "Idiomas",
     "spanish": "Español: nativo",
-    "english": "Inglés: B2.2 (todos los recursos y fuentes que estudio son en inglés)"
+    "english": "Inglés: B2.2. Todo mi aprendizaje técnico lo realizo en inglés, incluyendo documentación, recursos y comunidades."
   },
   "projects": {
     "title": "Proyectos",

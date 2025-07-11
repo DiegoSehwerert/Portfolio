@@ -1,26 +1,28 @@
-"use client"
+"use client";
 
-import { Card, CardContent } from "@/components/ui/card"
-import { motion } from "framer-motion"
-import Link from "next/link"
+import { Card, CardContent } from "@/components/ui/card";
+import { AnimatedSection } from "../about/AnimatedSection";
+import Link from "next/link";
 
 type Project = {
-  title: string
-  description: string
-  tech: string[]
-  repo: string
-  demo: string
-  index: number
-}
+  title: string;
+  description: string;
+  tech: string[];
+  repo: string;
+  demo: string;
+  index: number;
+};
 
-export function ProjectCard({ title, description, tech, repo, demo, index }: Project) {
+export function ProjectCard({
+  title,
+  description,
+  tech,
+  repo,
+  demo,
+  index,
+}: Project) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay: index * 0.1 }}
-      viewport={{ once: true }}
-    >
+    <AnimatedSection delay={index * 0.1}>
       <Card className="hover:shadow-xl transition-shadow duration-300">
         <CardContent className="p-6">
           <h2 className="text-2xl font-semibold mb-2">{title}</h2>
@@ -55,6 +57,6 @@ export function ProjectCard({ title, description, tech, repo, demo, index }: Pro
           </div>
         </CardContent>
       </Card>
-    </motion.div>
-  )
+    </AnimatedSection>
+  );
 }

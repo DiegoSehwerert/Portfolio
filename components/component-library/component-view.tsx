@@ -3,7 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import CodeModal from "@/components/ui/code-modal";
-import { demoMap } from "@/app/[locale]/component-library/componentList.client";
+import { demoMap } from "@/app/[locale]/projects/component-library/componentList.client";
 
 interface ComponentItem {
   name: string;
@@ -28,9 +28,9 @@ export default function ComponentView({ components }: Props) {
                 <div className="flex items-center justify-between">
                   <h2 className="text-lg font-semibold">{comp.name}</h2>
                   <CodeModal
-                    title={`Código de ${comp.name}`}
+                    title={`${comp.name}`}
                     code={String(comp.code)}
-                    trigger={<Button>Ver código</Button>}
+                    trigger={<Button>Code</Button>}
                   />
                 </div>
                 <p className="text-muted-foreground text-sm">

@@ -27,15 +27,18 @@ export default function AboutPage() {
           className="rounded-full mb-4"
         />
         <h1 className="text-4xl font-bold mb-2">{t("title")}</h1>
-        <p className="text-muted-foreground mb-4 max-w-prose">
-          {t.raw("description").map((item: string, idx: number) => (
-            <span
-              key={idx}
-              className="block mb-2"
-              dangerouslySetInnerHTML={{ __html: item }}
-            />
-          ))}
-        </p>
+        <div className="relative bg-muted/40 border border-border rounded-xl p-6 shadow-sm mb-8">
+          <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
+            {t.raw("description").map((item: string, idx: number) => (
+              <p
+                key={idx}
+                className="transition-all duration-300"
+                dangerouslySetInnerHTML={{ __html: item }}
+              />
+            ))}
+          </div>
+        </div>
+
         <div className="flex gap-4">
           <a href="/Curriculum.pdf" target="_blank" rel="noopener noreferrer">
             <Button>{t("cvButton")}</Button>
@@ -48,7 +51,7 @@ export default function AboutPage() {
 
       <Separator className="my-6" />
 
-      <AnimatedSection delay={0}>
+      <AnimatedSection delay={0.1}>
         <Card>
           <CardContent className="p-6 space-y-6">
             <h2 className="text-xl font-semibold text-foreground">
