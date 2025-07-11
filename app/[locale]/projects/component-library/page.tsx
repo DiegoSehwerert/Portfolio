@@ -1,3 +1,4 @@
+"use client";
 import { getComponentList } from "./componentList.server";
 import { getLocale } from "next-intl/server";
 import ClientComponentLibraryPage from "./ClientComponentLibraryPage";
