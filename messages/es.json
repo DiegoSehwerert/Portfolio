@@ -62,7 +62,7 @@
     "list": [
       {
         "title": "Work in Progress",
-        "description": "Actualmente estoy desarrollando una plataforma SaaS modular con componentes reutilizables, dashboards en tiempo real y arquitectura escalable. El proyecto estará disponible aquí muy pronto.",
+        "description": "Actualmente estoy desarrollando una plataforma SaaS modular con componentes reutilizables, dashboards en tiempo real y arquitectura escalable. El proyecto estará disponible aquí muy pronto. De momento, puedes ver la librería de componentes.",
         "tech": [
           "Next.js",
           "TypeScript",
@@ -72,13 +72,6 @@
         ],
         "repo": "not yet",
         "demo": "not yet"
-      },
-      {
-        "title": "Clon de sistema de reservas",
-        "description": "Ingeniería inversa del endpoint de reservas para generar entradas falsas y validar payloads.",
-        "tech": ["Node.js", "Express", "MongoDB", "Postman", "Zod"],
-        "repo": "https://github.com/tuusuario/reservas-fake",
-        "demo": "https://reservas-fake.vercel.app"
       }
     ]
   },

@@ -1,12 +1,6 @@
-import { notFound } from "next/navigation";
 import { getRequestConfig } from "next-intl/server";
 
-const locales = ["en", "es"];
-
-console.log("getRequestConfig:");
-
 export default getRequestConfig(async (params) => {
-  // requestLocale es una Promise, hay que hacer await
   const locale = await params.requestLocale;
 
   if (!locale) {

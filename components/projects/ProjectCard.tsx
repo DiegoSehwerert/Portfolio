@@ -23,7 +23,7 @@ export function ProjectCard({
 }: Project) {
   return (
     <AnimatedSection delay={index * 0.1}>
-      <Card className="hover:shadow-xl transition-shadow duration-300">
+      <Card className="shadow-xl transition-shadow duration-300">
         <CardContent className="p-6">
           <h2 className="text-2xl font-semibold mb-2">{title}</h2>
           <p className="text-muted-foreground mb-4">{description}</p>

@@ -3,10 +3,11 @@
 import { ProjectCard } from "@/components/projects/ProjectCard";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function ProjectsPage() {
   const t = useTranslations("projects");
+  const locale = useLocale();
 
   const projects = t.raw("list") as {
     title: string;
@@ -23,7 +24,9 @@ export default function ProjectsPage() {
           {t("title")}
         </h1>
         <Button variant="outline" asChild>
-          <Link href="/projects/component-library">{t("viewComponents")}</Link>
+          <Link href={`/${locale}/projects/component-library`}>
+            {t("viewComponents")}
+          </Link>
         </Button>
       </div>
 

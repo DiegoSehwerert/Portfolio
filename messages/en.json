@@ -61,24 +61,17 @@
     "viewComponents": "View component library",
     "list": [
       {
-        "title": "CSV Editor SSR",
-        "description": "CSV file editor with data comparison, validations and server rendering with Next.js.",
+        "title": "Work in Progress",
+        "description": "I am currently developing a modular SaaS platform with reusable components, real-time dashboards, and scalable architecture. The project will be available here very soon. In the meantime, you can view the component library.",
         "tech": [
           "Next.js",
           "TypeScript",
-          "React Hook Form",
-          "CSV",
-          "TailwindCSS"
+          "TailwindCSS",
+          "Prisma",
+          "PostgreSQL"
         ],
-        "repo": "https://github.com/tuusuario/csv-editor",
-        "demo": "https://csv-editor.vercel.app"
-      },
-      {
-        "title": "Booking system clone",
-        "description": "Reverse engineering of booking endpoint to generate fake entries and validate payloads.",
-        "tech": ["Node.js", "Express", "MongoDB", "Postman", "Zod"],
-        "repo": "https://github.com/tuusuario/reservas-fake",
-        "demo": "https://reservas-fake.vercel.app"
+        "repo": "not yet",
+        "demo": "not yet"
       }
     ]
   },

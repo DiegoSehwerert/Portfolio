@@ -7,9 +7,11 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
 import { TypingName } from "@/components/TypingName";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
 export default function Home() {
   const t = useTranslations("home");
+  const locale = useLocale();
 
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen py-12 px-4 text-center overflow-hidden">
@@ -32,10 +34,10 @@ export default function Home() {
 
         <div className="flex gap-4 mb-4">
           <Button asChild>
-            <Link href="/projects">{t("projectButton")}</Link>
+            <Link href={`/${locale}/projects`}>{t("projectButton")}</Link>
           </Button>
           <Button variant="outline" asChild>
-            <Link href="/about">{t("aboutButton")}</Link>
+            <Link href={`/${locale}/about`}>{t("aboutButton")}</Link>
           </Button>
         </div>
 
