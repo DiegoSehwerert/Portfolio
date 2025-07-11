@@ -50,7 +50,7 @@ export default function ClientComponentLibraryPage({ components }: Props) {
   return (
     <div className="min-h-screen text-foreground">
       <div className="w-full h-screen flex flex-col">
-        <div className="shrink-0 px-4 sm:px-6 py-6 sm:py-8 border-b">
+        <div className="shrink-0 px-4 sm: pt-20 pb-4 sm:py-10 border-b">
           <div className="max-w-7xl mx-auto flex flex-col gap-4 sm:gap-2 md:flex-row md:items-center md:justify-between">
             <div className="w-full md:w-auto">
               <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold">

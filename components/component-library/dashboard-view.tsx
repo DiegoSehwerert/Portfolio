@@ -30,30 +30,30 @@ export default function DashboardView() {
             <h2 className="text-base lg:text-lg font-bold mb-4 lg:mb-6">
               {t("menu")}
             </h2>
-            <nav className="flex lg:flex-col lg:space-y-3 lg:space-x-0 space-x-3 overflow-x-auto lg:overflow-x-visible text-xs lg:text-sm font-medium text-muted-foreground pb-2 lg:pb-0">
+            <nav className="flex lg:flex-col gap-1 text-xs lg:text-sm font-medium text-muted-foreground pb-2 lg:pb-0">
               <Link
                 href="#"
-                className="flex items-center gap-1 lg:gap-2 hover:text-foreground transition whitespace-nowrap"
+                className="px-2 py-1 rounded hover:bg-muted hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
               >
-                <span className="text-sm">🏠</span> <span>{t("home")}</span>
+                {t("home")}
               </Link>
               <Link
                 href="#"
-                className="flex items-center gap-1 lg:gap-2 hover:text-foreground transition whitespace-nowrap"
+                className="px-2 py-1 rounded hover:bg-muted hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
               >
-                <span className="text-sm">📊</span> <span>{t("stats")}</span>
+                {t("stats")}
               </Link>
               <Link
                 href="#"
-                className="flex items-center gap-1 lg:gap-2 hover:text-foreground transition whitespace-nowrap"
+                className="px-2 py-1 rounded hover:bg-muted hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
               >
-                <span className="text-sm">👥</span> <span>{t("users")}</span>
+                {t("users")}
               </Link>
               <Link
                 href="#"
-                className="flex items-center gap-1 lg:gap-2 hover:text-foreground transition whitespace-nowrap"
+                className="px-2 py-1 rounded hover:bg-muted hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
               >
-                <span className="text-sm">⚙️</span> <span>{t("config")}</span>
+                {t("config")}
               </Link>
             </nav>
           </aside>

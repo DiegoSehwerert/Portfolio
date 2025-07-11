@@ -79,9 +79,9 @@
     "componentsTitle": "Librería de Componentes",
     "componentsDescription": "Colección de componentes reutilizables con diseño consistente.",
     "dashboardTitle": "Panel de control",
-    "dashboardDescription": "Vista general de posible admin panel.",
+    "dashboardDescription": "Vista general de como podria ser un panel de administracion diseñado por mi.",
     "loginTitle": "Login",
-    "loginDescription": "Previsualización de como sería un login hecho con mis componentes.",
+    "loginDescription": "Previsualización de como sería un login hecho a partir de mis diseños y componentes.",
     "toggleComponents": "Componentes",
     "toggleDashboard": "Dashboard",
     "toggleLogin": "Login"
