@@ -1,3 +1,5 @@
+//app/[locale]/projects/component-library/page.tsx
+
 import { getComponentList } from "./componentList.server";
 import { getLocale } from "next-intl/server";
 import ClientComponentLibraryPage from "./ClientComponentLibraryPage";
