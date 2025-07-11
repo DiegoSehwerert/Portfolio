@@ -12,7 +12,7 @@ export async function getDemoCode(relativePath: string) {
     const code = await fs.readFile(fullPath, "utf8");
     return code;
   } catch (error) {
-    console.error("Error reading demo code at:", fullPath);
+    console.error("Error reading demo code at:", fullPath, error);
     return `// Error loading file: ${relativePath}`;
   }
 }
