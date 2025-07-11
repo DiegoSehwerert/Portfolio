@@ -61,17 +61,17 @@
     "viewComponents": "Ver librería de componentes",
     "list": [
       {
-        "title": "CSV Editor SSR",
-        "description": "Editor de archivos CSV con comparación de datos, validaciones y renderizado en servidor con Next.js.",
+        "title": "Work in Progress",
+        "description": "Actualmente estoy desarrollando una plataforma SaaS modular con componentes reutilizables, dashboards en tiempo real y arquitectura escalable. El proyecto estará disponible aquí muy pronto.",
         "tech": [
           "Next.js",
           "TypeScript",
-          "React Hook Form",
-          "CSV",
-          "TailwindCSS"
+          "TailwindCSS",
+          "Prisma",
+          "PostgreSQL"
         ],
-        "repo": "https://github.com/tuusuario/csv-editor",
-        "demo": "https://csv-editor.vercel.app"
+        "repo": "not yet",
+        "demo": "not yet"
       },
       {
         "title": "Clon de sistema de reservas",

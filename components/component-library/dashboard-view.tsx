@@ -16,10 +16,12 @@ import {
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid } from "recharts";
 import usersData from "@/data/users.json";
 import { useTranslations } from "next-intl";
+import { useChartColors } from "@/hooks/useChartColors";
 
 export default function DashboardView() {
   const [showAllUsers, setShowAllUsers] = useState(false);
   const t = useTranslations("dashboard");
+  const chartColors = useChartColors();
   return (
     <div className="w-full">
       <Card className="w-full overflow-hidden">
@@ -162,8 +164,8 @@ export default function DashboardView() {
                           <XAxis dataKey="day" fontSize={10} />
                           <YAxis fontSize={10} width={30} />
                           <ChartTooltip content={<ChartTooltipContent />} />
-                          <Bar dataKey="revenue" fill="var(--color-revenue)" />
-                          <Bar dataKey="users" fill="var(--color-users)" />
+                          <Bar dataKey="revenue" fill={chartColors.revenue} />
+                          <Bar dataKey="users" fill={chartColors.users} />
                         </BarChart>
                       </ChartContainer>
                     </CardContent>

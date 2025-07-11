@@ -4,9 +4,11 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useState } from "react";
 import type { Engine } from "@tsparticles/engine";
+import { useTheme } from "next-themes";
 
 const ParticlesBackground = () => {
   const [initialized, setInitialized] = useState(false);
+  const { resolvedTheme } = useTheme();
 
   useEffect(() => {
     initParticlesEngine(async (engine: Engine) => {
@@ -17,6 +19,11 @@ const ParticlesBackground = () => {
   }, []);
 
   if (!initialized) return null;
+
+  const isDark = resolvedTheme === "dark";
+
+  const particleColor = isDark ? "#ffffff" : "#000000";
+  const linkColor = isDark ? "#ffffff" : "#000000";
 
   return (
     <div className="fixed inset-0 -z-10 pointer-events-none">
@@ -30,7 +37,6 @@ const ParticlesBackground = () => {
           fpsLimit: 120,
           interactivity: {
             events: {
-              // onClick: { enable: true, mode: "push" },
               onHover: { enable: true, mode: "repulse" },
               resize: { enable: true },
             },
@@ -40,11 +46,11 @@ const ParticlesBackground = () => {
             },
           },
           particles: {
-            color: { value: "#000000" },
+            color: { value: particleColor },
             links: {
               enable: true,
               distance: 200,
-              color: "#000000",
+              color: linkColor,
               opacity: 0.5,
               width: 1,
             },
