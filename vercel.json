@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "app/[locale]/projects/component-library/page.tsx": {
-      "includedFiles": ["components/ui/*.tsx"]
-    }
-  }
-}
