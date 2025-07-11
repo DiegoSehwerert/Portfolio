@@ -273,8 +273,7 @@ function ChartLegendContent({
   payload,
   verticalAlign = "bottom",
   nameKey,
-}: // eslint-disable-next-line @typescript-eslint/no-explicit-any
-React.ComponentProps<"div"> & {
+}: React.ComponentProps<"div"> & {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   payload?: any[];
   verticalAlign?: "top" | "bottom" | "middle";

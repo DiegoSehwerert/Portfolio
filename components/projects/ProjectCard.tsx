@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { AnimatedSection } from "../about/AnimatedSection";
-import Link from "next/link";
+// import Link from "next/link";
 
 type Project = {
   title: string;
@@ -38,13 +38,13 @@ export function ProjectCard({
             ))}
           </div>
           <div className="flex gap-4">
-            <Link
+            {/* <Link
               href={repo}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
             >
-              Ver repositorio
+              github
             </Link>
             <Link
               href={demo}
@@ -52,8 +52,10 @@ export function ProjectCard({
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
             >
-              Ver demo
-            </Link>
+              demo
+            </Link> */}
+            <span className="text-blue-600">{repo}</span>
+            <span className="text-blue-600">{demo}</span>
           </div>
         </CardContent>
       </Card>
