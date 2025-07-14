@@ -5,11 +5,13 @@ Allow: /
 Disallow: /_next/
 Disallow: /api/
 Disallow: /.well-known/
-
-# Bloquear archivos de desarrollo
-Disallow: /*.json$
-Disallow: /*.config.*
 Disallow: /node_modules/
+
+# Permitir archivos necesarios para el funcionamiento de Next.js locales
+Allow: /es/
+Allow: /en/
+Allow: /es/*
+Allow: /en/*
 
 # Permitir explícitamente las rutas principales
 Allow: /es/
