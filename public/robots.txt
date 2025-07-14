@@ -1,19 +1,16 @@
 User-agent: *
 Allow: /
 
-# Bloquear archivos y directorios internos de Next.js
 Disallow: /_next/
 Disallow: /api/
 Disallow: /.well-known/
 Disallow: /node_modules/
 
-# Permitir archivos necesarios para el funcionamiento de Next.js locales
 Allow: /es/
 Allow: /en/
 Allow: /es/*
 Allow: /en/*
 
-# Permitir explícitamente las rutas principales
 Allow: /es/
 Allow: /en/
 Allow: /es/about
@@ -23,5 +20,4 @@ Allow: /en/projects
 Allow: /es/projects/component-library
 Allow: /en/projects/component-library
 
-# Sitemap
 Sitemap: https://diego-sehwerert.dev/sitemap.xml
