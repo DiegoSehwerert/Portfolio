@@ -1,8 +1,3 @@
----
-
-### 🇪🇸 `README.es.md` (versión en español):
-
-```markdown
 # Diego Sehwerert – Portfolio Web
 
 🌐 Idiomas disponibles: [🇬🇧 English](README.md) | [🇪🇸 Español](README.es.md)
