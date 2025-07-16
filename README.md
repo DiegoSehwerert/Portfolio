@@ -34,7 +34,7 @@ Soy **Diego Sehwerert**, Full‑Stack Engineer especializado en **Next.js**, **T
 ## 🌐 Setup y ejecución local
 
 ```bash
-git clone https://github.com/tu-usuario/portfolio.git
+git clone https://github.com/DiegoSehwerert/portfolio.git
 cd portfolio
 npm install
 npm run dev

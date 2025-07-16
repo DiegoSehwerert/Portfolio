@@ -40,7 +40,11 @@ export default function AboutPage() {
         </div>
 
         <div className="flex gap-4">
-          <a href="/Curriculum.pdf" target="_blank" rel="noopener noreferrer">
+          <a
+            href={`/${t("cvButtonLink").replace(/^\/+/, "")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button>{t("cvButton")}</Button>
           </a>
           <a href="mailto:dsehwerert@gmail.com">
