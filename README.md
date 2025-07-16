@@ -1,37 +1,38 @@
-# Diego Sehwerert – Portfolio Web
+# Diego Sehwerert – Portfolio Website
 
-[🎯 Visita el sitio en directo](https://diego-sehwerert.dev)
-
----
-
-## 🚀 Sobre mí
-
-Soy **Diego Sehwerert**, Full‑Stack Engineer especializado en **Next.js**, **TypeScript**, y **UX orientada a rendimiento y accesibilidad**. Este portfolio refleja no solo mis habilidades técnicas, sino también mi enfoque cuidadoso en limpieza de código, organización y experiencia del usuario.
+🌐 Available languages: [🇬🇧 English](README.md) | [🇪🇸 Español](README.es.md)
 
 ---
 
-## 🛠 Tecnologías principales
+## 🚀 About Me
 
-- **Next.js(App Router)** – SSR, streaming, rutas por idioma.
-- **TypeScript** – Tipado seguro en toda la base de código.
-- **Tailwind CSS + shadcn/ui** – UI moderna, coherente y accesible.
-- **Dynamic imports & modals** – Ejemplos prácticos de código interactivo.
-- **Internationalization** – Soporte `/es` y `/en` con `next-intl`.
-- **Graph Charts** – Uso de `recharts` para visualización de datos.
-- **SEO básico** – Meta tags, `robots.txt`, sitemap.
+I'm **Diego Sehwerert**, a Full‑Stack Engineer specialized in **Next.js**, **TypeScript**, and **UX focused on performance and accessibility**.  
+This portfolio reflects not only my technical skills, but also my commitment to clean code, structure, and user experience.
 
 ---
 
-## 🔍 Secciones destacadas
+## 🛠 Core Technologies
 
-1. **Home** – Introducción breve y enlaces a proyectos.
-2. **Component Library** – Vista interactiva de tus componentes UI + código fuente.
-3. **Dashboard / Login** – Simulación demo de vistas reales usando tu biblioteca.
-4. **Multilenguaje** – Cambia entre español e inglés.
+- **Next.js (App Router)** – SSR, streaming, language-based routing.
+- **TypeScript** – End-to-end type safety across the codebase.
+- **Tailwind CSS + shadcn/ui** – Modern, consistent, and accessible UI.
+- **Dynamic imports & modals** – Practical examples of interactive code.
+- **Internationalization** – `/es` and `/en` support using `next-intl`.
+- **Graph Charts** – Data visualization with `recharts`.
+- **Basic SEO** – Meta tags, `robots.txt`, and sitemap.
 
 ---
 
-## 🌐 Setup y ejecución local
+## 🔍 Highlighted Sections
+
+1. **Home** – Brief introduction and project links.
+2. **Component Library** – Interactive view of custom UI components + source code.
+3. **Dashboard / Login** – Demo simulation using your component library.
+4. **Multi-language** – Toggle between Spanish and English.
+
+---
+
+## 🌐 Local Setup & Run
 
 ```bash
 git clone https://github.com/DiegoSehwerert/portfolio.git
