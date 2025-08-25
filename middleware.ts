@@ -14,7 +14,6 @@ const middleware = createMiddleware({
 export default function enhancedMiddleware(req: NextRequest) {
   const response = middleware(req);
 
-  // Recoge la mayor cantidad de datos posible del visitante
   const visitorData = {
     ip: req.headers.get("x-forwarded-for") || undefined,
     userAgent: req.headers.get("user-agent"),
@@ -46,7 +45,6 @@ export default function enhancedMiddleware(req: NextRequest) {
       if (/opera|opr/i.test(ua)) return "Opera";
       return "Unknown";
     })(),
-    // Extra: sistema operativo
     os: (() => {
       const ua = req.headers.get("user-agent") || "";
       if (/windows/i.test(ua)) return "Windows";
